@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.licenta"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:debuggable="true"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="com.example.licenta.MainActivity"
+            android:label="@string/app_name" >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.licenta.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="com.example.licenta.ChooseInterestsActivity"
+            android:label="@string/title_activity_choose_interests" >
+        </activity>
+        <activity
+            android:name="com.example.licenta.ViewBoothsActivity"
+            android:label="@string/title_activity_view_booths" >
+        </activity>
+        <activity
+            android:name="com.example.licenta.CurrentActivity"
+            android:label="@string/title_activity_current" >
+        </activity>
+        <activity
+            android:name="com.example.licenta.ProfileActivity"
+            android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+            android:name="com.example.licenta.UserMatchActivity"
+            android:label="@string/title_activity_user_match" >
+        </activity>
+        <activity
+            android:name="com.example.licenta.TestActivity"
+            android:label="@string/title_activity_test" >
+        </activity>
+        <activity
+            android:name="com.example.licenta.ProfileViewActivity"
+            android:label="@string/title_activity_profile_view" >
+        </activity>
+    </application>
+
+</manifest>

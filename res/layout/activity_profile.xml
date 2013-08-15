@@ -1,0 +1,150 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollViewUpdateProfile"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relativeviewupdateprofile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        
+    <!-- Name input -->
+    <TextView
+        android:id="@+id/textViewNameUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/name" />
+
+    <EditText
+        android:id="@+id/editTextNameUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewNameUpdate"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <!-- User input -->
+
+    <TextView
+        android:id="@+id/textViewUserUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextNameUpdate"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/user_name" />
+
+    <EditText
+        android:id="@+id/editTextUserUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewUserUpdate"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textPersonName" >
+    </EditText>
+
+    <!-- Pass input -->
+
+    <TextView
+        android:id="@+id/textViewPassUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextUserUpdate"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/user_pass" />
+
+    <EditText
+        android:id="@+id/editTextPassUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewPassUpdate"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="text" />
+    
+    <!-- Current TAG SET -->
+
+    <TextView
+        android:id="@+id/textViewTagSetUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextPassUpdate"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/tag_set_title" />
+
+    <TextView
+        android:id="@+id/textViewTagSetUpdateTags"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewTagSetUpdate"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="None" />
+    
+    <!-- Choose interests input -->
+    <TextView
+        android:id="@+id/textViewupdateinterests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTagSetUpdateTags"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/interestsTitle_update"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    
+    <MultiAutoCompleteTextView
+        android:id="@+id/autocompleteUpdateProfile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewupdateinterests"
+        android:layout_marginTop="5dp"
+        android:text="Android"
+        android:ems="10"  />
+
+    <Button
+        android:id="@+id/buttonOkUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/autocompleteUpdateProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/update" />
+
+    
+        
+    </RelativeLayout>
+
+</ScrollView>
